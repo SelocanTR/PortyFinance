@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             text: universalLink,
             width: 180,
             height: 180,
-            colorDark: "#1C2123",
+            colorDark: "#000000",
             colorLight: "#ffffff",
             correctLevel: QRCode.CorrectLevel.H
         });
