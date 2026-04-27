@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const supabaseKey = 'sb_publishable_3VkBX42-PwH8FzdducPzLA__XbNwclM';
     const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
-    const universalLink = "https://onelink.to/kndpzw";
     const iosLink = "https://apps.apple.com/tr/app/porty-finance/id6761659554";
-    const androidLink = universalLink;
+    const androidLink = "https://play.google.com/store/apps/details?id=com.porty.app&hl=en";
+    const universalLink = "https://portyfinance.rubeeks.co";
 
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
