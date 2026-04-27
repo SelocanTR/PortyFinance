@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
     const universalLink = "https://onelink.to/kndpzw";
-    const iosLink = "https://apps.apple.com/us/app/porty-finance/id6761659554";
+    const iosLink = "https://apps.apple.com/tr/app/porty-finance/id6761659554";
     const androidLink = universalLink;
 
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
