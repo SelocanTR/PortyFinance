@@ -183,3 +183,39 @@ p {
         display: none;
     }
 }
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 8px;
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    z-index: 100;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+}
+
+.lang-btn.active {
+    background: var(--primary-blue);
+    color: white;
+}

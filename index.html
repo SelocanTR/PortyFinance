@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porty - Finansal Özgürlüğe Adım At</title>
-    <meta name="description" content="Yatırımlarını tek bir yerden takip et, hedeflerine ulaş. Porty ile finansal geleceğini yönet.">
+    <title id="meta-title">Porty - Take a Step Toward Financial Freedom</title>
+    <meta name="description" id="meta-desc" content="Track your investments in one place, reach your goals. Manage your financial future with Porty.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -15,35 +15,41 @@
 <body>
     <div class="background-glow"></div>
     
+    <nav class="language-switcher">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('tr')">TR</button>
+        <button class="lang-btn" onclick="setLanguage('de')">DE</button>
+    </nav>
+
     <main class="container">
         <header class="logo-container">
             <img src="logo.png" alt="Porty Logo" class="logo">
         </header>
 
         <section class="content-card">
-            <h1 class="highlight">Hemen İndir</h1>
-            <p>Yatırımlarını tek bir yerden takip et, hedeflerine ulaş. Porty ile finansal geleceğini yönetmeye hemen başla.</p>
+            <h1 class="highlight" id="heading">Download Now</h1>
+            <p id="description">Track your investments in one place, reach your goals. Start managing your financial future with Porty now.</p>
             
             <div id="desktop-view" class="desktop-only">
                 <div class="qr-wrapper">
                     <div id="qrcode"></div>
                 </div>
-                <p class="qr-text">Uygulamayı indirmek için QR kodu taratın</p>
+                <p class="qr-text" id="qr-text">Scan the QR code to download the app</p>
             </div>
 
             <div class="store-buttons">
-                <a href="https://apps.apple.com/tr/app/porty-finance/id6761659554" class="badge-link" id="ios-link">
-                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" alt="App Store'dan İndirin" class="store-badge">
+                <a href="https://apps.apple.com/app/porty-finance/id6761659554" class="badge-link" id="ios-link">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="store-badge" id="ios-badge">
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.porty.app&hl=en" class="badge-link" id="android-link">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png" alt="Google Play'den Alın" class="store-badge play-store">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge play-store" id="android-badge">
                 </a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; Porty Finance. Tüm hakları saklıdır.</p>
+        <p id="footer-text">&copy; Porty Finance. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
